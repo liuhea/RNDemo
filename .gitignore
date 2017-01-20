@@ -1,0 +1,10 @@
+.idea/
+__tests__/
+node_modules/
+yarn.lock
+build/
+.gradle/
+*.iml
+keystores/
+local.properties
+.DS_Store
