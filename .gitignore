@@ -8,3 +8,4 @@ build/
 keystores/
 local.properties
 .DS_Store
+captures/

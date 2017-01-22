@@ -6,6 +6,6 @@ import {
     AppRegistry,
 } from 'react-native';
 
-import HelloWorldApp from './js/FlexDemo.js'
+import HelloWorldApp from './js/NavigatorDemo.js'
 
 AppRegistry.registerComponent('HelloWorldApp', () => HelloWorldApp);

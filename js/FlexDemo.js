@@ -28,12 +28,6 @@ class FlexDirectionBasics extends Component {
                     </Text>
 
                 </View>
-
-                <Image source={require('./images/logo_rn.png')} style={{padding:10,width: 200, height: 150}}/>
-                <Image source={require('./images/logo_rn.png')} style={{padding:10,width: 200, height: 150}}/>
-                <Image source={require('./images/logo_rn.png')} style={{padding:10,width: 200, height: 150}}/>
-                <Image source={require('./images/logo_rn.png')} style={{padding:10,width: 200, height: 150}}/>
-                <Image source={require('./images/logo_rn.png')} style={{padding:10,width: 200, height: 150}}/>
             </ScrollView>
         );
     }
