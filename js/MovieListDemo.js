@@ -1,4 +1,3 @@
-
 /**
  * Created by liuhe on 2017/1/20.
  */
@@ -8,7 +7,6 @@ import React, {
 } from 'react';
 
 import {
-    AppRegistry,
     Text,
     Image,
     StyleSheet,
