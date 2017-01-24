@@ -6,6 +6,6 @@ import {
     AppRegistry,
 } from 'react-native';
 
-import HelloWorldApp from './js/NetworkDemo.js'
+import HelloWorldApp from './js/RNToNativeDemo.js'
 
 AppRegistry.registerComponent('HelloWorldApp', () => HelloWorldApp);

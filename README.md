@@ -1,2 +1,0 @@
-# RNDemo
-Learning  React Nativew 
