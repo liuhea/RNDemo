@@ -17,14 +17,13 @@ public class RNModule extends ReactContextBaseJavaModule {
         super(reactContext);
 
         //给上下文对象赋值
-        RNTest.sContext = reactContext;
+        RNTest.sReactContext = reactContext;
     }
 
     @Override
     public String getName() {
         return "RNModule";
     }
-
 
     @ReactMethod
     public void NativeMethod() {

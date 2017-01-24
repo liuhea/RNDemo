@@ -16,26 +16,31 @@ export default class RNToNativeDemo extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            content: '点击3秒后接收Native发回的信息',
+            content: '点击后，等待接收Native发回的信息',
         }
     }
 
     componentWillMount() {
-        //监听事件名为EventName的事件
-        DeviceEventEmitter.addListener('NativeEvent', ()=> {
-            this.showState();
+        //监听事件名为EventName的事件,对应了原生端的名字
+        DeviceEventEmitter.addListener('KEY_NATIVE_EVENT', (reminder) => {
+            // alert(reminder.success);
+            let response = reminder.success;
+            let parseResponse = JSON.parse(response);
+            let parseString = parseResponse.data[0].description;
+            // console.log(parsedString);
+            this.receiveDataFromNative(parseString);
+
         });
     }
 
     render() {
         return (
             <View style={styles.container}>
-                <Button
+                < Button
                     onPress={this.callNative.bind(this)}
                     title="call NativeMethod"
                     color="deepskyblue"
                 />
-
                 <Text style={styles.welcome}>
                     {this.state.content}
                 </Text>
@@ -47,8 +52,8 @@ export default class RNToNativeDemo extends Component {
         NativeModules.RNModule.NativeMethod();
     }
 
-    showState() {
-        this.setState({content: '已经收到了原生模块发送来的事件'})
+    receiveDataFromNative(data) {
+        this.setState({content: data})
     }
 }
 

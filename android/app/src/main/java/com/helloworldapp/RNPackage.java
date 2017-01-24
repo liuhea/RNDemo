@@ -16,7 +16,7 @@ import java.util.List;
  * @date 2017-01-24</p>
  */
 
-public class MyPackage implements ReactPackage {
+public class RNPackage implements ReactPackage {
     @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
         List<NativeModule> modules = new ArrayList<>();
